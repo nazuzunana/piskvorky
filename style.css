@@ -1,20 +1,28 @@
 * {
   box-sizing: border-box;
+  margin: 0%;
 }
 
 body {
   display: flex;
   justify-content: center;
+  font-family: sans-serif;
+  color: #fff;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 22rem;
 }
 
 img {
-  width: 400px;
+  width: 22rem;
+}
+
+.description {
+  background-color: #283e50;
+  padding: 2rem 1rem 2rem 1rem;
 }
 
 .description h1 {
@@ -22,11 +30,41 @@ img {
 }
 
 .description p {
-  text-align: justify;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .btns {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.rules-btn {
+  background-color: #1fcca4;
+}
+
+.rules-btn:hover {
+  background-color: #1cbb96;
+}
+
+.start-btn {
+  background-color: #0197f6;
+}
+
+.start-btn:hover {
+  background-color: #0090e9;
+}
+
+.rules-btn,
+.start-btn {
+  width: 22rem;
+  text-align: center;
+  padding: 1rem;
 }
