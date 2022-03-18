@@ -1,7 +1,32 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
+  width: 400px;
+}
+
+img {
+  width: 400px;
+}
+
+.description h1 {
+  text-align: center;
+}
+
+.description p {
+  text-align: justify;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
