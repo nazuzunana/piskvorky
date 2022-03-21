@@ -15,13 +15,13 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 25rem;
+  width: 22rem;
   padding-top: 2rem;
 }
 
 img {
   display: block;
-  width: 25rem;
+  width: 22rem;
   border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
@@ -39,6 +39,7 @@ img {
 .description p {
   text-align: center;
   padding-top: 2rem;
+  line-height: 1.5rem;
 }
 
 .btns {
@@ -71,7 +72,7 @@ a {
 
 .rules-btn,
 .start-btn {
-  width: 25rem;
+  width: 22rem;
   text-align: center;
   padding: 1rem;
 }
