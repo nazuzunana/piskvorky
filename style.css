@@ -76,3 +76,12 @@ a {
   text-align: center;
   padding: 1rem;
 }
+
+.circle,
+.cross {
+  display: flex;
+  width: 1em;
+  height: 1em;
+  display: inline;
+  filter: invert(100%);
+}
