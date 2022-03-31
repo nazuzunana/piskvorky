@@ -54,11 +54,13 @@ a {
   color: #fff;
 }
 
-.rules-btn {
+.rules-btn,
+.main-page {
   background-color: #1fcca4;
 }
 
-.rules-btn:hover {
+.rules-btn:hover,
+.main-page:hover {
   background-color: #1cbb96;
 }
 
@@ -71,7 +73,8 @@ a {
 }
 
 .rules-btn,
-.start-btn {
+.start-btn,
+.main-page {
   width: 22rem;
   text-align: center;
   padding: 1rem;
