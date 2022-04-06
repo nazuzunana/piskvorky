@@ -74,6 +74,11 @@ body {
   filter: invert(100%);
 }
 
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .examples img {
   display: block;
   width: 100%;
@@ -140,6 +145,16 @@ a {
 @media (min-width: 769px) {
   .container {
     width: 60%;
+  }
+
+  .example1,
+  .example2,
+  .example3,
+  .example4,
+  .example5,
+  .example6 {
+    width: 50%;
+    padding: 2px;
   }
 }
 
