@@ -57,11 +57,11 @@ body {
   padding: 3rem 0.5rem 3rem 2rem;
 }
 
-.rule-row {
+li {
   padding-bottom: 1rem;
 }
 
-.rule-row:last-child {
+li:last-child {
   padding: 0;
 }
 
@@ -148,13 +148,17 @@ a {
   }
 
   .example1,
-  .example2,
   .example3,
+  .example5 {
+    width: 50%;
+    padding-right: 0.5rem;
+  }
+
+  .example2,
   .example4,
-  .example5,
   .example6 {
     width: 50%;
-    padding: 2px;
+    padding-left: 0.5rem;
   }
 }
 
