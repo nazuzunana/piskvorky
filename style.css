@@ -32,7 +32,8 @@ body {
   padding: 2rem 1rem 2rem 1rem;
 }
 
-.description h1 {
+.description h1,
+.game-container h1 {
   text-align: center;
   font-family: 'Lobster';
   font-size: 3rem;
@@ -93,7 +94,7 @@ li:last-child {
 /*end of rule page*/
 
 /*buttons*/
-.btns {
+.description.btns {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -169,3 +170,44 @@ a {
   }
 }
 /*end of responsivity*/
+
+/*game*/
+
+/*main container*/
+.game-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  max-width: 80vmin;
+}
+
+/*panel with players and buttons*/
+.game-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*game*/
+.game-table {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+.game-table .cell {
+  width: 10%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #000000;
+}
+
+.cell-content {
+  background-color: #fff;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
