@@ -68,10 +68,10 @@ li:last-child {
 
 .circle,
 .cross {
-  display: flex;
+  position: relative;
+  top: 2px;
   width: 1em;
   height: 1em;
-  display: inline;
   filter: invert(100%);
 }
 
@@ -189,6 +189,23 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  padding: 1rem 0rem 1rem 0rem;
+  align-items: center;
+}
+
+.home-btn,
+.restart-btn {
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+
+.game-panel .home-btn {
+  background-color: #1cbb96;
+}
+
+.game-panel .restart-btn {
+  background-color: #0197f6;
 }
 
 /*game*/
