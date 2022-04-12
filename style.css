@@ -91,7 +91,6 @@ li:last-child {
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
-/*end of rule page*/
 
 /*buttons*/
 .description.btns {
@@ -111,17 +110,18 @@ a {
   background-color: #1fcca4;
   border-bottom: solid 1px black;
 }
-
-.rules-btn:hover,
-.main-page:hover {
-  background-color: #1cbb96;
-}
-
 .start-btn {
   background-color: #0197f6;
 }
 
-.start-btn:hover {
+.rules-btn:hover,
+.main-page:hover,
+.home-btn:hover {
+  background-color: #1cbb96;
+}
+
+.start-btn:hover,
+.restart-btn:hover {
   background-color: #0090e9;
 }
 
@@ -131,8 +131,6 @@ a {
   text-align: center;
   padding: 1rem;
 }
-/*end of buttons*/
-/*end of main container*/
 
 /*responsivity*/
 /*iPads & tablets*/
@@ -169,22 +167,19 @@ a {
     width: 40%;
   }
 }
-/*end of responsivity*/
 
 /*game*/
-
 /*main container*/
 .game-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 90%;
   padding-top: 2rem;
   padding-bottom: 5rem;
   max-width: 80vmin;
 }
 
-/*panel with players and buttons*/
+/*panel with players & buttons*/
 .game-panel {
   display: flex;
   flex-direction: row;
@@ -192,19 +187,25 @@ a {
   width: 100%;
   padding: 1rem 0rem 1rem 0rem;
   align-items: center;
+  height: auto;
+}
+
+.player {
+  font-size: 1.5rem;
 }
 
 .home-btn,
 .restart-btn {
+  display: inline-block;
   padding: 0.5rem;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
-.game-panel .home-btn {
-  background-color: #1cbb96;
+.home-btn {
+  background-color: #1fcca4;
 }
 
-.game-panel .restart-btn {
+.restart-btn {
   background-color: #0197f6;
 }
 
