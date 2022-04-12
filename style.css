@@ -28,7 +28,7 @@ body {
 
 .container__description {
   background-color: #283e50;
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 2rem 1rem 3rem 1rem;
 }
 
 .container__description h1,
@@ -45,7 +45,6 @@ body {
   line-height: 1.5rem;
 }
 
-/*rule page*/
 .container__rules {
   background-color: #283e50;
   border-radius: 0.5rem 0.5rem 0rem 0rem;
