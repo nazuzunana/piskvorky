@@ -79,6 +79,7 @@ li:last-child {
 .rules__examples {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .rules__examples img {
@@ -144,18 +145,8 @@ a {
     width: 60%;
   }
 
-  .example1,
-  .example3,
-  .example5 {
-    width: 50%;
-    padding-right: 0.5rem;
-  }
-
-  .example2,
-  .example4,
-  .example6 {
-    width: 50%;
-    padding-left: 0.5rem;
+  .example {
+    width: 47%;
   }
 }
 
