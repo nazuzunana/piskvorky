@@ -12,7 +12,6 @@ body {
   background-attachment: fixed;
 }
 
-/*main container*/
 .container {
   display: flex;
   flex-direction: column;
@@ -21,37 +20,39 @@ body {
   padding-bottom: 5rem;
 }
 
-.header-image > img {
+.container__header-img img {
   display: block;
   width: 100%;
   border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
-.description {
+.container__description {
   background-color: #283e50;
   padding: 2rem 1rem 2rem 1rem;
 }
 
-.description h1,
-.game-container h1 {
+.container__description h1,
+.container__rules h1,
+.container__game h1 {
   text-align: center;
   font-family: 'Lobster';
   font-size: 3rem;
 }
 
-.description p {
+.container__description p {
   text-align: center;
   padding-top: 2rem;
   line-height: 1.5rem;
 }
 
 /*rule page*/
-.rules {
+.container__rules {
+  background-color: #283e50;
   border-radius: 0.5rem 0.5rem 0rem 0rem;
   padding: 1.5rem 1.5rem 0rem 1.5rem;
 }
 
-.rule-list {
+.rules__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,25 +76,24 @@ li:last-child {
   filter: invert(100%);
 }
 
-.examples {
+.rules__examples {
   display: flex;
   flex-wrap: wrap;
 }
 
-.examples img {
+.rules__examples img {
   display: block;
   width: 100%;
 }
 
-.examples figcaption {
+.rules__examples figcaption {
   font-style: italic;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
 
-/*buttons*/
-.description.btns {
+.container__btns {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -105,34 +105,32 @@ a {
   color: #fff;
 }
 
-.rules-btn,
-.main-page {
-  background-color: #1fcca4;
-  border-bottom: solid 1px black;
-}
-.start-btn {
-  background-color: #0197f6;
-}
-
-.rules-btn:hover,
-.main-page:hover,
-.home-btn:hover {
-  background-color: #1cbb96;
-}
-
-.start-btn:hover,
-.restart-btn:hover {
-  background-color: #0090e9;
-}
-
-.rules-btn,
-.start-btn,
-.main-page {
+.container__btns--rules,
+.container__btns--start,
+.container__btns--homepage {
   text-align: center;
   padding: 1rem;
 }
 
-/*responsivity*/
+.container__btns--rules,
+.container__btns--homepage {
+  background-color: #1fcca4;
+  border-bottom: solid 1px black;
+}
+
+.container__btns--rules:hover,
+.container__btns--homepage:hover {
+  background-color: #1cbb96;
+}
+
+.container__btns--start {
+  background-color: #0197f6;
+}
+
+.container__btns--start:hover {
+  background-color: #0090e9;
+}
+
 /*iPads & tablets*/
 @media (min-width: 481px) {
   .container {
@@ -168,9 +166,7 @@ a {
   }
 }
 
-/*game*/
-/*main container*/
-.game-container {
+.container__game {
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -179,8 +175,7 @@ a {
   max-width: 80vmin;
 }
 
-/*panel with players & buttons*/
-.game-panel {
+.game-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -190,26 +185,33 @@ a {
   height: auto;
 }
 
-.player {
+.game-header__player {
   font-size: 1.3rem;
 }
 
-.home-btn,
-.restart-btn {
+.game-header__btns--homepage,
+.game-header__btns--restart {
   display: inline-block;
   padding: 0.3rem;
   border-radius: 4px;
 }
 
-.home-btn {
+.game-header__btns--homepage {
   background-color: #1fcca4;
 }
 
-.restart-btn {
+.game-header__btns--homepage:hover {
+  background-color: #1cbb96;
+}
+
+.game-header__btns--restart {
   background-color: #0197f6;
 }
 
-/*game*/
+.game-header__btns--restart:hover {
+  background-color: #0090e9;
+}
+
 .game-table {
   display: flex;
   flex-wrap: wrap;
@@ -217,7 +219,7 @@ a {
   border: 1px solid #000000;
 }
 
-.game-table .cell {
+.cell {
   width: 10%;
   aspect-ratio: 1 / 1;
   border: 1px solid #000000;
@@ -228,4 +230,9 @@ a {
   opacity: 0.5;
   width: 100%;
   height: 100%;
+}
+
+.cell-content:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }

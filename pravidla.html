@@ -15,15 +15,16 @@
   </head>
   <body>
     <div class="container">
-      <div class="description rules">
+      <div class="container__rules">
         <h1>Pravidla</h1>
-        <ol class="rule-list">
+        <ol class="rules__list">
           <li>Hra piškvorky je určena pro dva hráče.</li>
           <li>Hraje se na hrací ploše 10×10, tvořené poli ve tvaru čtverce.</li>
           <li>
             Na začátku si hráči rozdělí role. Jeden bude hrát za kolečka
-            <img class="circle" src="circle.svg" alt="kolečko" />, druhý bude
-            hrát za křížky <img class="cross" src="cross.svg" alt="křížek" />.
+            <img class="circle" src="icons/circle.svg" alt="kolečko" />, druhý
+            bude hrát za křížky
+            <img class="cross" src="icons/cross.svg" alt="křížek" />.
           </li>
           <li>
             Losem se určí, kdo bude začínat. V naší aplikaci to vylosujeme za
@@ -47,10 +48,10 @@
             symbolů do jedné řady, hra končí remízou.
           </li>
         </ol>
-        <div class="examples">
+        <div class="rules__examples">
           <figure class="example1">
             <img
-              src="instructions-01.jpeg"
+              src="img/instructions-01.jpeg"
               alt="Ukázka situace po třech tazích"
             />
             <figcaption>
@@ -59,21 +60,21 @@
           </figure>
           <figure class="example2">
             <img
-              src="instructions-02.jpeg"
+              src="img/instructions-02.jpeg"
               alt="Ukázka situace po čtyřech tazích"
             />
             <figcaption>Situace po čtyřech tazích</figcaption>
           </figure>
           <figure class="example3">
             <img
-              src="instructions-03.jpeg"
+              src="img/instructions-03.jpeg"
               alt="Ukázka výherní pozice hráče s kolečky"
             />
             <figcaption>Výherní pozice hráče s kolečky</figcaption>
           </figure>
           <figure class="example4">
             <img
-              src="instructions-04.jpeg"
+              src="img/instructions-04.jpeg"
               alt="Ukázka situace, ve které nikdo nevyhrává"
             />
             <figcaption>
@@ -84,23 +85,27 @@
           </figure>
           <figure class="example5">
             <img
-              src="instructions-05.jpeg"
+              src="img/instructions-05.jpeg"
               alt="Ukázka výherní pozice hráče s křížky"
             />
             <figcaption>Výherní pozice hráče s křížky</figcaption>
           </figure>
           <figure class="example6">
             <img
-              src="instructions-06.jpeg"
+              src="img/instructions-06.jpeg"
               alt="Ukázka ještě jedné výherní pozice hráče s kolečky"
             />
             <figcaption>Ještě jedna výherní pozice hráče s kolečky</figcaption>
           </figure>
         </div>
       </div>
-      <div class="btns">
-        <a href="index.html"><div class="main-page">Úvodní stránka</div></a>
-        <a href="hra.html"><div class="start-btn">Začít hrát</div></a>
+      <div class="container__btns">
+        <a href="index.html"
+          ><div class="container__btns--homepage">Úvodní stránka</div></a
+        >
+        <a href="hra.html"
+          ><div class="container__btns--start">Začít hrát</div></a
+        >
       </div>
     </div>
   </body>
