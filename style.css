@@ -4,8 +4,6 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
   font-family: sans-serif;
   color: #fff;
   background-image: linear-gradient(#615dad, #ffc8da);
@@ -15,6 +13,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  margin: auto;
   width: 90%;
   padding-top: 2rem;
   padding-bottom: 5rem;
@@ -159,6 +158,7 @@ a {
 .container__game {
   display: flex;
   flex-direction: column;
+  margin: auto;
   width: 90%;
   padding-top: 2rem;
   padding-bottom: 5rem;
@@ -218,8 +218,6 @@ a {
 .cell-content {
   background-color: #fff;
   opacity: 0.5;
-  width: 100%;
-  height: 100%;
 }
 
 .cell-content:hover {
