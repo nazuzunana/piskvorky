@@ -205,22 +205,32 @@ a {
 .game-table {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   border: 1px solid #000000;
 }
 
-.cell {
+button {
   width: 10%;
   aspect-ratio: 1 / 1;
   border: 1px solid #000000;
-}
-
-.cell-content {
   background-color: #fff;
   opacity: 0.5;
 }
 
-.cell-content:hover {
+button:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+
+.board__field--circle,
+.board__field--cross {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.board__field--circle {
+  background-image: url('icons/circle.svg');
+}
+
+.board__field--cross {
+  background-image: url('icons/cross.svg');
 }
