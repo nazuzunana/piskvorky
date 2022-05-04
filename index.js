@@ -1,3 +1,5 @@
+//4. úkol
+
 const gameCell = document.querySelectorAll('.cell-content');
 let player = 'circle';
 const playerIcon = document.querySelector('.game-header__player p img');
@@ -25,7 +27,7 @@ for (let i = 0; i < gameCell.length; i += 1) {
   });
 }
 
-//---
+//5. úkol
 
 const getSymbol = (field) => {
   if (field.classList.contains('board__field--cross')) {
@@ -107,16 +109,13 @@ const isWinningMove = (field) => {
     return true;
   }
 
-  // BONUS //
+  //diagonála
   let x;
   let y;
 
-  // DIAGONÁLA 1
   let inDiagonal1 = 1;
 
-  // (A) Koukni do levého horního rohu
-
-  // (i) vlevo + (ii) nahoru
+  //doleva nahoru
   x = origin.row;
   y = origin.column;
 
@@ -126,9 +125,7 @@ const isWinningMove = (field) => {
     y--;
   }
 
-  // (B) Koukni do pravého dolního rohu
-
-  // (i) vpravo + (ii) dolů
+  // doprava dolů
   x = origin.row;
   y = origin.column;
 
@@ -146,14 +143,9 @@ const isWinningMove = (field) => {
     return true;
   }
 
-  //--------------------------------------//
-
-  // DIAGONÁLA 2
   let inDiagonal2 = 1;
 
-  // (A) Koukni do levého dolního rohu
-
-  // (i) doleva + (ii) dolu
+  //doleva dolů
   x = origin.row;
   y = origin.column;
 
@@ -167,9 +159,7 @@ const isWinningMove = (field) => {
     y++;
   }
 
-  // (B) Koukni do pravého horního rohu
-
-  // (i) doprava + (ii) nahoru
+  //doprava nahoru
   x = origin.row;
   y = origin.column;
   while (
